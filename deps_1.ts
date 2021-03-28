@@ -9,6 +9,8 @@ import { resolve, relative, dirname } from 'path';
 const projectRoot = resolve(__dirname, 'project_1')
 // 类型声明
 type DepRelation = { [key: string]: { deps: string[], code: string } }
+
+
 // 初始化一个空的 depRelation，用于收集依赖
 const depRelation: DepRelation = {}
 
