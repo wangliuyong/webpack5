@@ -6,5 +6,5 @@ const ast = parse(code, { sourceType: 'module' })
 const result = babel.transformFromAstSync(ast, code, {
   presets: ['@babel/preset-env']
 })
-console.log(result.code)
 
+console.log(result.code)
