@@ -17,7 +17,7 @@ node xxx.js
 ```
 
 总结
-# AST
+# AST   let_to_var.ts
 
 1.parse 把代码code1变成AST
 2.traverse 遍历AST1 然后惊醒修改生成AST2
