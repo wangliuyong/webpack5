@@ -11,7 +11,7 @@ const projectRoot = resolve(__dirname, 'project_1')
 type DepRelation = { [key: string]: { deps: string[], code: string } }
 
 
-// 初始化一个空的 depRelation，用于收集依赖
+// 初始化一个空的 depRelation，用于收集依赖w
 const depRelation: DepRelation = {}
 
 // 将入口文件的绝对路径传入函数，如 D:\demo\fixture_1\index.js
