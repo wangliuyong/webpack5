@@ -10,7 +10,8 @@ var _b = _interopRequireDefault(require("./b.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-console.log(_a["default"].getB() + ' ' + _b["default"].getA());
+console.log(_a["default"].getB());
+console.log(_b["default"].getA());
       }
     },{
       key: "a.js", 
