@@ -8,4 +8,3 @@ const result = babel.transformFromAstSync(ast, code, {
   presets: ['@babel/preset-env']
 })
 fs.writeFileSync('./test.es5.js', result.code)
-

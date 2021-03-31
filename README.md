@@ -1,3 +1,7 @@
+1.babel
+2.loader
+3.plugin  
+
 ## 安装依赖
 
 ```
