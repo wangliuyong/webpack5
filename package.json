@@ -1,5 +1,5 @@
 {
-  "name": "my-webpack-demo-2",
+  "name": "my-webpack-demo-3",
   "version": "0.0.1",
   "engines": {
     "node": ">=14"
@@ -11,6 +11,7 @@
     "@babel/preset-env": "7.12.1",
     "@babel/traverse": "7.12.5",
     "@types/babel__traverse": "7.0.15",
+    "shelljs": "0.8.4",
     "ts-node": "9.0.0",
     "typescript": "4.0.5"
   },
@@ -19,6 +20,7 @@
     "@types/babel__generator": "7.6.2",
     "@types/babel__parser": "7.1.1",
     "@types/babel__preset-env": "7.9.1",
-    "@types/node": "14.14.6"
+    "@types/node": "14.14.6",
+    "@types/shelljs": "0.8.8"
   }
 }
