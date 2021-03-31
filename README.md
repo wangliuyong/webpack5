@@ -1,3 +1,5 @@
+浏览器怎么才能能运行import的代码
+
 # import 支持程度
 1.目前新的浏览器版本支持  script  type=module  ie8-15  不支持
 
