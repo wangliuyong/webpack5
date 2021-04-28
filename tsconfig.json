@@ -3,7 +3,7 @@
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"]  // 使得ts  支持alias  @
     },
     /* Basic Options */
     // "incremental": true,                   /* Enable incremental compilation */
