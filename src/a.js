@@ -1,2 +1,1 @@
-const a = 'a'
-export {a}
+export const a = 'a'
