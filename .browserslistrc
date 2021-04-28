@@ -1,5 +1,6 @@
 [production]
 > 1%
+##  部分支持，需要添加polyfill进行支持
 ie 9
 
 [modern]
