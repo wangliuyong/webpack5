@@ -8,6 +8,9 @@ module.exports = {
   entry: {
     main: './src/index.js',
   },
+  output: {
+    filename: '[name].[contenthash].js'
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src/') // 相对路径
