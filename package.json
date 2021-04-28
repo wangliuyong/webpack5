@@ -1,24 +1,47 @@
 {
-  "name": "my-webpack-demo-1",
-  "version": "0.0.1",
-  "engines": {
-    "node": ">=14"
+  "name": "webpack5",
+  "scripts": {
+    "build": "webpack"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.12.17",
+    "@babel/preset-env": "7.12.17",
+    "@babel/preset-react": "7.12.13",
+    "@babel/preset-typescript": "7.12.17",
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.1",
+    "@typescript-eslint/eslint-plugin": "4.15.1",
+    "@typescript-eslint/parser": "4.15.1",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.2.2",
+    "css-loader": "5.0.2",
+    "eslint": "7.20.0",
+    "eslint-config-airbnb-typescript": "12.3.1",
+    "eslint-config-react-app": "6.0.0",
+    "eslint-plugin-flowtype": "5.2.2",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "eslint-webpack-plugin": "2.5.2",
+    "html-webpack-plugin": "5.2.0",
+    "less": "4.1.1",
+    "less-loader": "8.0.0",
+    "mini-css-extract-plugin": "1.3.8",
+    "sass": "1.32.8",
+    "sass-loader": "11.0.1",
+    "style-loader": "2.0.0",
+    "stylus": "0.54.8",
+    "stylus-loader": "5.0.0",
+    "typescript": "4.1.5",
+    "webpack": "5.23.0",
+    "webpack-cli": "4.5.0"
   },
   "dependencies": {
-    "@babel/core": "7.12.3",
-    "@babel/generator": "7.12.5",
-    "@babel/parser": "7.12.5",
-    "@babel/preset-env": "7.12.1",
-    "@babel/traverse": "7.12.5",
-    "@types/babel__traverse": "7.0.15",
-    "ts-node": "9.0.0",
-    "typescript": "4.0.5"
-  },
-  "devDependencies": {
-    "@types/babel__core": "7.1.12",
-    "@types/babel__generator": "7.6.2",
-    "@types/babel__parser": "7.1.1",
-    "@types/babel__preset-env": "7.9.1",
-    "@types/node": "^14.14.37"
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   }
 }
