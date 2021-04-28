@@ -1,12 +1,13 @@
 const ESLintPlugin = require('eslint-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 const mode = 'production'
 
 module.exports = {
   mode,
   entry: {
-    main: './src/index.js',
+    index: './src/index.js',
   },
   output: {
     filename: '[name].[contenthash].js'
@@ -22,7 +23,12 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
-    })
+    }),
+    // 自动生成html
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      chunks: ['index']
+    }),
   ],
   module: {
     rules: [
@@ -69,6 +75,25 @@ module.exports = {
   optimization: {
     moduleIds: 'deterministic',
     runtimeChunk: 'single', // 运行时文件 single=> 单独打包；是其他文件能正常运行的依赖；抽离出来可以使用户少请求文件（缓存）
-    
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          priority: 10,
+          minSize: 0, /* 如果不写 0，文件尺寸太小，会直接跳过 */
+          test: /[\\/]node_modules[\\/]/, // 为了匹配 /node_modules/ 或 \node_modules\
+          name: 'vendors', // 文件名
+          chunks: 'all',  // all 表示同步加载和异步加载，async 表示异步加载，initial 表示同步加载
+          // 这三行的整体意思就是把两种加载方式的来自 node_modules 目录的文件打包为 vendors.xxx.js
+          // 其中 vendors 是第三方的意思
+        },
+        common: {
+          priority: 5,
+          minSize: 0,
+          minChunks: 2,
+          chunks: 'all',
+          name: 'common'
+        }
+      },
+    },
   },
 }
