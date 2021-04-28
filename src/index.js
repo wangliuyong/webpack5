@@ -4,7 +4,7 @@ const b = import('./b') // 动态引入，也按需加载
 const hi = () => {
   console.log(a)
   console.log(b)
-  console.log(Promise.resolve('支持ie'))
+  console.log(Promise.resolve('支持ie')) // ie 中没有Promise,如需要支持需要添加polyfill
 }
 
 hi()
