@@ -8,6 +8,7 @@ module.exports = {
   mode,
   entry: {
     index: './src/index.js',
+    admin:'./src/admin.js'
   },
   output: {
     filename: '[name].[contenthash].js'
