@@ -2,10 +2,12 @@ import {a} from '@/a' // 直接引入
 import {jsxDemo} from '@/demo-jsx.jsx'
 import {tsDemo} from '@/demo-ts.ts'
 import './style/index.scss'
+import varScss from './style/var/export-var.scss'
 const b = import('@/b') // 动态引入，也按需加载
 
 
 console.log(jsxDemo)
+console.log('varScss',varScss)
 
 const hi = () => {
   console.log(a)
