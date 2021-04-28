@@ -1,3 +1,4 @@
-const tsDemo: String = 'tsDemo'
+const tsDemo: String = 'tsDemo';
 
-export {tsDemo}
+// eslint-disable-next-line eol-last
+export {tsDemo};
