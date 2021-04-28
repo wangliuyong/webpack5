@@ -65,5 +65,10 @@ module.exports = {
         ]
       },
     ]
-  }
+  },
+  optimization: {
+    moduleIds: 'deterministic',
+    runtimeChunk: 'single', // 运行时文件 single=> 单独打包；是其他文件能正常运行的依赖；抽离出来可以使用户少请求文件（缓存）
+    
+  },
 }
