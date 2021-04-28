@@ -1,3 +1,4 @@
+const ESLintPlugin = require('eslint-webpack-plugin')
 const mode = 'production'
 
 module.exports = {
@@ -5,6 +6,11 @@ module.exports = {
   entry: {
     main: './src/index.js',
   },
+  plugins: [
+    new ESLintPlugin({
+      extensions: ['.js', '.jsx', '.ts', '.tsx'] // 不加 .jsx 就不会检查 jsx 文件了
+    })
+  ],
   module: {
     rules: [
       {
