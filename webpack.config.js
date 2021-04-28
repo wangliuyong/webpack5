@@ -13,7 +13,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [
+            presets: [ // 预先的规则集合
               ['@babel/preset-env'], // es6 => es5
             ]
           }
