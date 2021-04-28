@@ -38,7 +38,15 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
-          'sass-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              additionalData: `@import "~@/style/var/index.scss";`, // 搜友scss 文件自动引入var/index.scss，无需手动引入
+              sassOptions: {
+                includePaths: [__dirname]
+              },
+            },
+          }
         ]
       },
     ]
