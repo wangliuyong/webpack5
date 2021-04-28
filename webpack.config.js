@@ -14,12 +14,12 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: [ // 预先的规则集合
-              ['@babel/preset-env'], // es6 => es5
+              ['@babel/preset-env'], // es6 => es5根据env 根据环境自主打包
+              ['@babel/preset-react', {runtime: 'classic'}], // jsx  打包规则
             ]
           }
         }
       },
-      
     ]
   }
 }
