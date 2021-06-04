@@ -13,7 +13,9 @@ console.log(ast)
 traverse(ast, {
   enter: item => {
    if(item.node.type === "VariableDeclaration"){
-     
+     if(item.node.kind === 'let'){
+      item.node.kind = 'var'
+     }
    }
   }
 })
